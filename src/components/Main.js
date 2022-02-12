@@ -5,6 +5,10 @@ import Button from "@mui/material/Button";
 import { Grid, Link } from "@mui/material";
 import SectionOne from "./Section1";
 import SectionTwo from "./Section2";
+import SectionTestimony from "./section-testimony";
+import { testimonies1, testimonies2 } from "./static/testimony";
+import SectionFour from "./Section4";
+import Footer from "./Footer";
 
 const menu = ["About us", "Stories", "Contact", "Log in"];
 const submenu = [
@@ -94,6 +98,10 @@ const Main = () => {
 
       <SectionOne />
       <SectionTwo />
+      <SectionTestimony testimony={testimonies1} />
+      <SectionFour />
+      <SectionTestimony testimony={testimonies2} />
+      <Footer />
     </Box>
   );
 };
