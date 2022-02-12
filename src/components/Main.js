@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import { Grid, Link, Typography, CardMedia } from "@mui/material";
+import { Grid, Link } from "@mui/material";
 import SectionOne from "./Section1";
 import SectionTwo from "./Section2";
 

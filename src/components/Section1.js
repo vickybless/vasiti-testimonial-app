@@ -1,6 +1,6 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
-import { Grid, Typography, CardMedia } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 const SectionOne = () => {
   return (
