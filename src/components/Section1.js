@@ -34,7 +34,7 @@ const SectionOne = () => {
             backgroundRepeat: "no-repeat",
             // backgroundPosition: "center center",
             marginTop: "28px",
-            minHeight: "460px",
+            minHeight: { xs: "285px", sm: "460px" },
           }}
         >
           {/* <CardMedia
