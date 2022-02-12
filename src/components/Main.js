@@ -10,6 +10,8 @@ import { testimonies1, testimonies2 } from "./static/testimony";
 import SectionFour from "./Section4";
 import Footer from "./Footer";
 
+import TestimonyModal from "./modal";
+
 const menu = ["About us", "Stories", "Contact", "Log in"];
 const submenu = [
   "Marketplace",
@@ -19,8 +21,10 @@ const submenu = [
   "Internships",
   "Events",
 ];
-
 const Main = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <Box>
       <Container
@@ -97,12 +101,13 @@ const Main = () => {
       </Container>
 
       <SectionOne />
-      <SectionTwo />
+      <SectionTwo openModal={handleOpen} />
       <SectionTestimony testimony={testimonies1} />
       <SectionFour />
       <SectionTestimony testimony={testimonies2} />
 
       <Footer />
+      {open && <TestimonyModal open={open} handleClose={handleClose} />}
     </Box>
   );
 };

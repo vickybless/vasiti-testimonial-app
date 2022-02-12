@@ -2,7 +2,7 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import { Grid, Typography, Button, Chip, Stack } from "@mui/material";
 
-const SectionTwo = () => {
+const SectionTwo = ({ openModal }) => {
   return (
     <Container
       maxWidth='false'
@@ -20,19 +20,12 @@ const SectionTwo = () => {
               backgroundRepeat: "no-repeat",
 
               // backgroundPosition: "center center",
+              backgroundPositionY: "calc(100% + 44px)",
               marginTop: "28px",
               minHeight: "460px",
             }}
-          >
-            {/* <CardMedia
-            component="img"
-            image="/img/picture.png"
-            alt="hero"
-            sx={{ paddingTop: "28px" }}
-          /> */}
-            {/* <img src="img/picture.png" alt="" height="500" width="200" /> */}
-          </Grid>
-          <Grid item xs={12} sm={6} textAlign={"left"}>
+          ></Grid>
+          <Grid item xs={12} sm={6}>
             <div>
               <Typography
                 variant='h4'
@@ -68,6 +61,7 @@ const SectionTwo = () => {
             </div>
             <Stack width='200px'>
               <Button
+                onClick={openModal}
                 variant='text'
                 sx={{ marginTop: "48px", color: "#ffffff", padding: "0px" }}
               >
